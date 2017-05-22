@@ -36,7 +36,7 @@ public class Ex1CarClass {
 	}
 	public String toString(){
 	
-		return String.format("%-12s%-12s%-12f",make, model, engineSize); 
+		return String.format("%-12s%-12s%-12.2f",make, model, engineSize); 
 	}
 	
 	
