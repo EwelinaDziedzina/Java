@@ -7,5 +7,100 @@ public class Clock {
 	private int minutes;
 	
 	
+	Clock(){	
+	}
 	
-}
+	Clock (int hours, int minutes, int seconds){
+		setHours(hours);
+		setMinutes(minutes);
+		setSeconds(seconds);
+	}
+	
+	public void setHours(int hours){
+		if (hours >= 0 && hours <=24)
+		this.hours = hours;
+	}
+	
+	public int getHours(){
+		return hours;
+	}
+	
+	public void setMinutes(int minutes){
+		if(minutes >= 0 && minutes <= 59)
+		this.minutes = minutes;
+	}
+	
+	public int getMinutes(){
+		return minutes;
+	}
+	
+	public void setSeconds(int seconds){
+		if (seconds >= 0 && seconds<=59)
+		this.seconds = seconds;
+	}
+	
+	public int getSeconds(){
+		return seconds;
+	}
+	
+	public void resetTime(){
+		this.hours = 0;
+		this.minutes = 0;
+		this.seconds = 0;	
+	}
+	
+	public void increaseSeconds(int a){
+		if ((seconds + a) < 60){
+			seconds = seconds + a;
+		}else{
+			//minutes = minutes + ((seconds + a) / 60 );
+			increaseMinutes((seconds + a) / 60);
+			seconds = (seconds + a) % 60;
+		}
+	}
+	
+	public void increaseMinutes(int a){
+		if ((minutes + a) < 60){
+			minutes = minutes + a;
+		}else{
+			increaseHours ((minutes + a) / 60);
+			minutes = (minutes + a) % 60;		
+		}
+	}
+	
+	public void increaseHours(int a){
+		if ((hours + a) < 24)
+			hours = hours + a;
+		else{
+			hours = (hours + a) % 24;
+		}
+	}	
+		
+		
+	public void increaseTime(int h, int m, int s){
+	 
+		if ((seconds + s) < 60){
+			seconds = seconds + s;
+		}else{
+			minutes = minutes + ((seconds + s)/60);	
+			seconds = (seconds + s) % 60;
+
+		}
+		if ((minutes + m) < 60){
+			minutes = minutes + m;
+		}else{
+			hours = hours + ((minutes + m) / 60);
+			minutes = (minutes + m) % 60;
+		}
+		if ((hours + h) < 24)
+			hours = hours + h;
+		else{
+			hours = (hours + h)%24;			
+		}
+	}
+	
+	
+	public String toString(){
+		return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+	}
+}	

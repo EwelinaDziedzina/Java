@@ -11,11 +11,13 @@ public class Employee {
 	
 	
 	
-	public static int employeeCounter=1;
+	public static int employeeNoCounter=1;
+	public static int employeeCounter;
 	
 	
 	public Employee(){
-		employeeNo = employeeCounter++;
+		employeeNo = employeeNoCounter++;
+		employeeCounter++;
 	}
 	
 	public Employee(String name){

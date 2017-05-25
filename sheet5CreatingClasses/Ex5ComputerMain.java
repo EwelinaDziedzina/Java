@@ -24,7 +24,7 @@ public class Ex5ComputerMain {
 		System.out.println("******************************************************");
 		
 		for(int i = 0; i<pcArray.length; i++)
-			if (pcArray[i].calculateCost()>400)
+			if (pcArray[i].calculateCost() > 400)
 				System.out.println(pcArray[i]);
 	}
 		public static void printArray(Ex5Computer  [] pcArray ){

@@ -28,10 +28,10 @@ public class Ex1bSearchingAndSorting {
 	}
 
 	public void smallestValue(int array1[]){      
-		int smallest= array1 [0]; 
-		for (int i =0 ; i < array1.length ; i++){
-			if(array1[i]<smallest)
-				smallest=array1[i]; 
+		int smallest = array1 [0]; 
+		for (int i = 0 ; i < array1.length ; i++){
+			if(array1[i] < smallest)
+				smallest = array1[i]; 
 		}
 		System.out.println("Smallest value is: " + smallest);
 
@@ -64,6 +64,7 @@ public class Ex1bSearchingAndSorting {
 			if (array1[i] == num){
 				isFound=true;
 				System.out.printf("Number %d was found at position %d.\n", num, i+1);
+				break;
 			}
 		}	
 			if (!isFound)
