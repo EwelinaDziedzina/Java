@@ -44,9 +44,7 @@ public class Clock {
 	}
 	
 	public void resetTime(){
-		this.hours = 0;
-		this.minutes = 0;
-		this.seconds = 0;	
+		hours = minutes = seconds = 0;	
 	}
 	
 	public void increaseSeconds(int a){
