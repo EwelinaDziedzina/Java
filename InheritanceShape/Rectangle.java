@@ -15,7 +15,7 @@ public class Rectangle extends Shape{
 		super(colour);
 		this.height = height;
 		this.widht = widht;
-
+		
 		
 	}
 	public double getHeight() {
@@ -36,7 +36,7 @@ public class Rectangle extends Shape{
 	}
 	
 	public void draw(){
-		System.out.println("Drawing a Rectangle");
+		System.out.println("\nDrawing a Rectangle");
 	}
 	
 	@Override

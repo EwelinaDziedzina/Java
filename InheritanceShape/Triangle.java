@@ -11,7 +11,8 @@ public class Triangle extends Shape {
 	}
 	
 	public void draw(){
-		System.out.println("Drawing a Triangle");
+		System.out.println("\nDrawing a Triangle");
 	}
-
+	
+	//toString from Shape class
 }

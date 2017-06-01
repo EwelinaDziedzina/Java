@@ -11,6 +11,7 @@ public class Circle extends Shape{
 	Circle(Colour colour, int radius){
 		super(colour);
 		this.radius = radius;
+	
 	}
 	
 	public int getRadius() {
@@ -22,7 +23,7 @@ public class Circle extends Shape{
 	}
 	
 	public void draw(){
-		System.out.println("Drawing a Triangle");
+		System.out.println("\nDrawing a Circle");
 	}
 	public String toString(){
 		return super.toString() + "\nRadius: " + radius;
