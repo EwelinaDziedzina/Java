@@ -22,7 +22,7 @@ public abstract class Pet {
 	}
 	
 	public Pet(String name, String breed, int age, String colour, boolean isFemale) {
-		super();
+		
 		this.name = name;
 		this.breed = breed;
 		this.age = age;
@@ -64,10 +64,11 @@ public abstract class Pet {
 	
 	@Override
 	public String toString() {
-		return "\nPet name: " + name + 
+		return "\nType of animal: " + getTypeOfAnimal() +
+				"\nPet name: " + name + 
 				"\nBreed: " + breed + 
 				"\nAge: " + age + 
 				"\nColour: " + colour + 
-				"\nisFemale: " + isFemale;
+				"\nGender: " + (isFemale?"Female":"Male");
 	}
 }	

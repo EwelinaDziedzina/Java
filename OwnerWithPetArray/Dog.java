@@ -1,6 +1,6 @@
 package OwnerWithPetArray;
 
-public class Dog extends Pet {
+public class Dog extends Pet implements Mammal{
 	
 
 	
@@ -47,10 +47,20 @@ public class Dog extends Pet {
 	public String getTypeOfAnimal(){
 		return "Dog";
 	}
+	
+	public void sleep(){
+		System.out.println("Dog is sleeping");
+	}
+	
+	public void walk(){
+		System.out.println("Walk the dog");
+	}
 
 	@Override
 	public String toString() {
-		return super.toString() +
-				"isMicroChipped=" + isMicroChipped + "MicroChip Number: " + microChipNumber;
+		return super.toString() + 
+				"\nis MicroChipped: " +
+				(isMicroChipped ? "Yes" : "No") + 
+				"\nMicroChip Number: " + microChipNumber;
 	}
 }

@@ -1,6 +1,6 @@
 package OwnerWithPetArray;
 
-public class Cat extends Pet {
+public class Cat extends Pet implements Mammal {
 	
 
 	
@@ -31,6 +31,14 @@ public class Cat extends Pet {
 	
 	public String getTypeOfAnimal(){
 		return "Cat";
+	}
+	
+	public void sleep(){
+		System.out.println("Cat is sleeping");
+	}
+	
+	public void walk(){
+		System.out.println("Let the cat out");
 	}
 
 	@Override

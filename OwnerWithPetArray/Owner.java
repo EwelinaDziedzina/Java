@@ -58,7 +58,7 @@ public class Owner {
 					"\nPhoneNo: " + phoneNo; 
 				
 		 for(Pet one : pet)
-			 text += one;
+			 text += "\n" + one;
 		 
 		 return text;
 	}		
