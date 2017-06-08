@@ -9,8 +9,6 @@ public class Employee {
 	private int employeeNo;
 	
 	
-	
-	
 	public static int employeeNoCounter=1;
 	public static int employeeCounter;
 	
@@ -22,8 +20,7 @@ public class Employee {
 	
 	public Employee(String name){
 		this();
-		this.name = name;
-		
+		this.name = name;	
 	}
 	
 	public Employee(String name, int age, int noOfSickDays, double salary){
@@ -32,8 +29,6 @@ public class Employee {
 		setAge(age);
 		setNoOfSickDays(noOfSickDays);
 		setSalary(salary);
-		
-		
 	}
 
 	public void setName(String name){
@@ -50,6 +45,7 @@ public class Employee {
 		else
 			System.out.println("Invalid age entered");
 	}
+	
 	public int getAge(){
 		return age;
 	}
@@ -63,9 +59,11 @@ public class Employee {
 	public int getNoOfSickDays(){
 		return noOfSickDays;
 	}
+	
 	public int getEmployeeNo(){
 		return employeeNo;
 	}
+	
 	public void setSalary(double salary){
 		double dailySalary = salary/30;
 		if (age<18){
@@ -83,7 +81,6 @@ public class Employee {
 	public double getIncreaseSalary (double increasement){
 			return (getSalary() + (getSalary()* increasement));
 	}
-	
 		
 	public String toString(){
 		

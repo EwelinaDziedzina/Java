@@ -11,7 +11,7 @@ public interface Apprentice {
 	
 	public void setPhase(int phase);
 	public int getPhase();
-	public void setEmployerName(String employerName);
-	public String getEmployerName();
+	public void setEmployersName(String employersName);
+	public String getEmployersName();
 
 }

@@ -1,15 +1,18 @@
 package TraineesAndApprentices;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class Trainee {
 	
-	
-	
-
 	private String name;
 	private LocalDate dateOfBirth; 
 	private String pps;
+	
+	
+	public Trainee(){
+	};
 	
 	
 	public Trainee(String name, LocalDate dateOfBirth, String pps) {
@@ -42,10 +45,15 @@ public class Trainee {
 		this.pps = pps;
 	}
 	
-	@Override
+
+	
 	public String toString() {
+		
+		DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
+		
 		return "\nTrainee Name: " + name + 
-				"\nDateOfBirth: " + dateOfBirth + 
-				"\nPPS: " + pps;
+				"\nDate Of Birth: " + dateOfBirth.format(formatter) + 
+				"\nPPS: " + pps +
+				"\nApprentice: " + this.getClass().getSimpleName();
 	}
 }
