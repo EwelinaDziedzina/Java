@@ -57,14 +57,14 @@ public class Ex1bSearchingAndSorting {
 		public void searchArray(int array1[]){
 		System.out.println("Please enter a value from 1 to 100: ");
 		int num = scanner.nextInt();
-		boolean  isFound= false;
+		boolean  isFound = false;
 		
 		for(int i = 0; i<array1.length; i++){
 			
 			if (array1[i] == num){
 				isFound=true;
 				System.out.printf("Number %d was found at position %d.\n", num, i+1);
-				break;
+			
 			}
 		}	
 			if (!isFound)

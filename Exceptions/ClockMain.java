@@ -1,6 +1,6 @@
 package Exceptions;
 
-
+import javax.swing.JOptionPane;
 
 public class ClockMain {
 	
@@ -8,10 +8,14 @@ public class ClockMain {
 		
 	
 		try {
-		Clock	c1 = new Clock(55, 59, 59);
+		Clock	c1 = new Clock(12, 25, 60);
 		System.out.println(c1);
 		} catch (InvalidTimeException e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
 			e.printStackTrace();
+		} finally {
+			
+			System.out.println("Do something after the catch");
 		}
 		
 		
