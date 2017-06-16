@@ -13,6 +13,8 @@ public class SearchForTheLetter {
 		System.out.println("Please eneter a letter you want to search for: ");
 		
 		String letter = scanner.nextLine();
+		
+		scanner.close();
 				
 		char [] letters = word.toCharArray();
 		
@@ -24,8 +26,7 @@ public class SearchForTheLetter {
 			}
 		}
 		if (!isFound)
-			System.out.println(letter + " was not found");
-			
+			System.out.println(letter + " was not found");		
 	}		
 }			
 			

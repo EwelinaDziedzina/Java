@@ -1,4 +1,4 @@
-package Dimentional2Array;
+package TwoDimentionalArrays;
 
 public class Ex3Clock {
 

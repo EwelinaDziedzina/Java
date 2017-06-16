@@ -22,8 +22,6 @@ public class UpdateTheMenu {
 		System.out.println(string.indexOf("Jelly"));
 		System.out.println(string.indexOf("for"));
 		
-		
-		
 		string = string.substring(0 , 88) + string.substring(102);
 		System.out.println(string);
 		
