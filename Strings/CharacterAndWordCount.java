@@ -12,7 +12,7 @@ public class CharacterAndWordCount {
 		String sentence = scanner.nextLine();
 		scanner.close();
 		//char [] letters = sentence.toCharArray();
-		String [] words = sentence.split(" ");
+		String [] words = sentence.split("//s+");
 		System.out.println("Words: " + words.length);
 		System.out.println("Characters (with spaces): " + sentence.length());
 		

@@ -16,7 +16,7 @@ public class ComparingWords {
 		if (word1.compareTo(word2)>0){
 			System.out.println(word1 + " follows " + word2);
 		}else{
-			System.out.println(word1 + " precedes " + word2);
+			System.out.println(word1 + " precedes " + word2);	
 		}
 	}
 }
